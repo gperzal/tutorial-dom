@@ -1,0 +1,149 @@
+/* ----------------------------------------------------------
+   Estilos para ejemplos de código
+-----------------------------------------------------------*/
+.code-example {
+    background-color: #f8f9fa;
+    border-left: 4px solid #0d6efd;
+    padding: 15px;
+    margin: 10px 0;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+}
+
+/* ----------------------------------------------------------
+   Estilos de resaltado
+-----------------------------------------------------------*/
+.highlight {
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* ----------------------------------------------------------
+   Contenedores de demostración
+-----------------------------------------------------------*/
+.demo-box {
+    border: 2px dashed #dee2e6;
+    padding: 20px;
+    margin: 15px 0;
+    min-height: 100px;
+}
+
+/* ----------------------------------------------------------
+   Animación Fade-In
+-----------------------------------------------------------*/
+.fade-in {
+    animation: fadeIn 0.35s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ----------------------------------------------------------
+   ESTILOS PARA MODO OSCURO
+-----------------------------------------------------------*/
+.dark-mode {
+    background-color: #121212 !important;
+    color: #f1f1f1 !important;
+}
+
+/* Body y textos */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode label {
+    color: #f1f1f1 !important;
+}
+
+/* Tarjetas */
+.dark-mode .card {
+    background-color: #1e1e1e !important;
+    color: #f1f1f1 !important;
+    border-color: #333 !important;
+}
+
+/* Card-header */
+.dark-mode .card-header {
+    border-bottom: 1px solid #444 !important;
+}
+
+/* Alerts */
+.dark-mode .alert {
+    background-color: #1f1f1f !important;
+    color: #f1f1f1 !important;
+    border-color: #333 !important;
+}
+
+/* Inputs */
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #222 !important;
+    color: #f1f1f1 !important;
+    border-color: #555 !important;
+}
+
+/* List group items */
+.dark-mode .list-group-item {
+    background-color: #1f1f1f !important;
+    color: #f1f1f1 !important;
+    border-color: #333 !important;
+}
+
+/* Badges */
+.dark-mode .badge {
+    opacity: 0.85 !important;
+}
+
+/* Botones */
+.dark-mode .btn-outline-danger {
+    color: #ff6e6e !important;
+    border-color: #ff6e6e !important;
+}
+
+.dark-mode .btn-outline-danger:hover {
+    background-color: #ff6e6e !important;
+    color: #121212 !important;
+}
+
+/* ----------------------------------------------------------
+   Ajustes adicionales visuales
+-----------------------------------------------------------*/
+
+/* Estilo más moderno para la página */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card,
+.alert,
+.list-group-item {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Inputs */
+input {
+    transition: border-color 0.25s ease;
+}
+
+/* Botones */
+button {
+    cursor: pointer;
+}
+
+/* Espaciado uniforme en columnas de cartas */
+#contenedor-cartas .col-md-4 {
+    transition: transform 0.2s ease;
+}
+
+#contenedor-cartas .col-md-4:hover {
+    transform: scale(1.02);
+}
