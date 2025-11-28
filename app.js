@@ -1,3 +1,47 @@
+/* ----------------------
+   EVENT LISTENERS
+---------------------- */
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Sección 1
+    document.getElementById("btn-texto").addEventListener("click", cambiarTextoById);
+    document.getElementById("btn-color").addEventListener("click", cambiarColorById);
+
+    // Sección 2
+    document.getElementById("btn-items").addEventListener("click", cambiarTodosLosItems);
+
+    // Sección 3
+    document.getElementById("btn-resaltar").addEventListener("click", resaltarPrimero);
+
+    // Sección 4
+    document.getElementById("btn-badges").addEventListener("click", cambiarTodosBadges);
+
+    // Sección 5
+    document.getElementById("btn-inner").addEventListener("click", cambiarInnerHTML);
+    document.getElementById("btn-textcontent").addEventListener("click", cambiarTextContent);
+
+    // Sección 6
+    document.getElementById("btn-toggle").addEventListener("click", toggleClase);
+    document.getElementById("btn-mostrar").addEventListener("click", mostrarOcultarCaja);
+
+    // Sección 7
+    document.getElementById("btn-add").addEventListener("click", agregarItem);
+    document.getElementById("btn-add50").addEventListener("click", agregarMuchosItems);
+    document.getElementById("btn-remove").addEventListener("click", removerUltimoItem);
+    document.getElementById("btn-fetch").addEventListener("click", cargarUsuarios);
+
+    // Sección 8
+    document.getElementById("btn-card").addEventListener("click", crearCarta);
+    document.getElementById("btn-card-template").addEventListener("click", crearCartaTemplate);
+    document.getElementById("btn-card-clear").addEventListener("click", limpiarCartas);
+
+    // Dark Mode
+    document.getElementById("btn-darkmode").addEventListener("click", toggleDarkMode);
+
+    // Validación en tiempo real
+    document.getElementById("nombreCarta").addEventListener("input", validarTitulo);
+});
+
 /* ----------------------------------------------------------
    1. getElementById
 -----------------------------------------------------------*/
@@ -212,6 +256,6 @@ function toggleDarkMode() {
 /* ----------------------------------------------------------
    12. Validación en tiempo real
 -----------------------------------------------------------*/
-document.getElementById("nombreCarta").addEventListener("input", (e) => {
+function validarTitulo(e) {
     e.target.style.borderColor = e.target.value.length > 0 ? "green" : "red";
-});
+}

@@ -14,127 +14,99 @@
     <div class="container my-5">
         <div class="text-center mb-5">
             <h1 class="text-center mb-2">Tutorial Interactivo del DOM</h1>
-            <button class="btn btn-dark mt-2" onclick="toggleDarkMode()">🌙 Modo Oscuro</button>
+            <button id="btn-darkmode" class="btn btn-dark mt-2">🌙 Modo Oscuro</button>
         </div>
 
-        <!-- Sección 1: getElementById -->
+        <!-- Sección 1 -->
         <div class="card mb-4">
-            <div class="card-header bg-primary text-white">
-                <h3>1. getElementById()</h3>
-            </div>
+            <div class="card-header bg-primary text-white"><h3>1. getElementById()</h3></div>
             <div class="card-body">
-                <p>Selecciona un elemento por su ID único.</p>
-
                 <p id="texto1">Este es un texto con id="texto1"</p>
-                <button class="btn btn-primary" onclick="cambiarTextoById()">Cambiar Texto</button>
-                <button class="btn btn-secondary" onclick="cambiarColorById()">Cambiar Color</button>
+                <button id="btn-texto" class="btn btn-primary">Cambiar Texto</button>
+                <button id="btn-color" class="btn btn-secondary">Cambiar Color</button>
             </div>
         </div>
 
-        <!-- Sección 2: getElementsByClassName -->
+        <!-- Sección 2 -->
         <div class="card mb-4">
-            <div class="card-header bg-success text-white">
-                <h3>2. getElementsByClassName()</h3>
-            </div>
+            <div class="card-header bg-success text-white"><h3>2. getElementsByClassName()</h3></div>
             <div class="card-body">
-                <p>Modifica todos los elementos que tengan la misma clase.</p>
-
                 <p class="item-lista">Elemento 1</p>
                 <p class="item-lista">Elemento 2</p>
                 <p class="item-lista">Elemento 3</p>
-                <button class="btn btn-success" onclick="cambiarTodosLosItems()">Cambiar Todos</button>
+                <button id="btn-items" class="btn btn-success">Cambiar Todos</button>
             </div>
         </div>
 
-        <!-- Sección 3: querySelector -->
+        <!-- Sección 3 -->
         <div class="card mb-4">
-            <div class="card-header bg-info text-white">
-                <h3>3. querySelector()</h3>
-            </div>
+            <div class="card-header bg-info text-white"><h3>3. querySelector()</h3></div>
             <div class="card-body">
-
-                <div>
-                    <p class="parrafo-especial">Primer párrafo con clase</p>
-                    <p class="parrafo-especial">Segundo párrafo con clase</p>
-                </div>
-                <button class="btn btn-info" onclick="resaltarPrimero()">Resaltar Primero</button>
+                <p class="parrafo-especial">Primer párrafo con clase</p>
+                <p class="parrafo-especial">Segundo párrafo con clase</p>
+                <button id="btn-resaltar" class="btn btn-info">Resaltar Primero</button>
             </div>
         </div>
 
-        <!-- Sección 4: querySelectorAll -->
+        <!-- Sección 4 -->
         <div class="card mb-4">
-            <div class="card-header bg-warning text-dark">
-                <h3>4. querySelectorAll()</h3>
-            </div>
+            <div class="card-header bg-warning text-dark"><h3>4. querySelectorAll()</h3></div>
             <div class="card-body">
                 <div class="lista-items">
                     <span class="badge bg-secondary me-2">Badge 1</span>
                     <span class="badge bg-secondary me-2">Badge 2</span>
                     <span class="badge bg-secondary me-2">Badge 3</span>
                 </div>
-                <button class="btn btn-warning mt-3" onclick="cambiarTodosBadges()">Cambiar Todos los Badges</button>
+                <button id="btn-badges" class="btn btn-warning mt-3">Cambiar Todos los Badges</button>
             </div>
         </div>
 
-        <!-- Sección 5: innerHTML y textContent -->
+        <!-- Sección 5 -->
         <div class="card mb-4">
-            <div class="card-header bg-danger text-white">
-                <h3>5. innerHTML y textContent</h3>
-            </div>
+            <div class="card-header bg-danger text-white"><h3>5. innerHTML y textContent</h3></div>
             <div class="card-body">
-                <div id="contenedor-dinamico" class="alert alert-secondary">
-                    Contenido original
-                </div>
-                <button class="btn btn-danger me-2" onclick="cambiarInnerHTML()">innerHTML</button>
-                <button class="btn btn-outline-danger" onclick="cambiarTextContent()">textContent</button>
+                <div id="contenedor-dinamico" class="alert alert-secondary">Contenido original</div>
+                <button id="btn-inner" class="btn btn-danger me-2">innerHTML</button>
+                <button id="btn-textcontent" class="btn btn-outline-danger">textContent</button>
             </div>
         </div>
 
-        <!-- Sección 6: classList -->
+        <!-- Sección 6 -->
         <div class="card mb-4">
-            <div class="card-header bg-dark text-white">
-                <h3>6. classList()</h3>
-            </div>
+            <div class="card-header bg-dark text-white"><h3>6. classList()</h3></div>
             <div class="card-body">
-                <div id="caja-animada" class="alert alert-light border">
-                    ¡Soy una caja animada!
-                </div>
-                <button class="btn btn-dark me-2" onclick="toggleClase()">Toggle Clase</button>
-                <button class="btn btn-outline-dark" onclick="mostrarOcultarCaja()">Mostrar/Ocultar</button>
+                <div id="caja-animada" class="alert alert-light border">¡Soy una caja animada!</div>
+                <button id="btn-toggle" class="btn btn-dark me-2">Toggle Clase</button>
+                <button id="btn-mostrar" class="btn btn-outline-dark">Mostrar/Ocultar</button>
             </div>
         </div>
 
-        <!-- Sección 7: createElement -->
+        <!-- Sección 7 -->
         <div class="card mb-4">
-            <div class="card-header" style="background-color:#6f42c1;color:white">
-                <h3>7. createElement() y appendChild()</h3>
-            </div>
+            <div class="card-header" style="background-color:#6f42c1;color:white"><h3>7. createElement()</h3></div>
             <div class="card-body">
-
                 <ul id="lista-dinamica" class="list-group mb-3">
                     <li class="list-group-item">Item inicial</li>
                 </ul>
 
-                <button class="btn btn-primary" onclick="agregarItem()">Agregar Item</button>
-                <button class="btn btn-secondary" onclick="agregarMuchosItems()">Agregar 50 Items</button>
-                <button class="btn btn-outline-secondary" onclick="removerUltimoItem()">Eliminar último item</button>
-                <button class="btn btn-primary mt-2" onclick="cargarUsuarios()">Cargar Usuarios (Fetch)</button>
+                <button id="btn-add" class="btn btn-primary">Agregar Item</button>
+                <button id="btn-add50" class="btn btn-secondary">Agregar 50 Items</button>
+                <button id="btn-remove" class="btn btn-outline-secondary">Eliminar último item</button>
+                <button id="btn-fetch" class="btn btn-primary mt-2">Cargar Usuarios (Fetch)</button>
             </div>
         </div>
 
-        <!-- Sección 8: Crear cartas -->
+        <!-- Sección 8 -->
         <div class="card mb-4">
-            <div class="card-header" style="background-color:#fd7e14;color:white">
-                <h3>8. Cartas dinámicas (creación avanzada)</h3>
-            </div>
+            <div class="card-header" style="background-color:#fd7e14;color:white"><h3>8. Cartas dinámicas</h3></div>
             <div class="card-body">
 
                 <input id="nombreCarta" class="form-control mb-2" placeholder="Título de la carta">
                 <input id="descripcionCarta" class="form-control mb-2" placeholder="Descripción">
 
-                <button class="btn btn-warning" onclick="crearCarta()">Crear Carta</button>
-                <button class="btn btn-dark" onclick="crearCartaTemplate()">Crear Carta (Template)</button>
-                <button class="btn btn-outline-danger" onclick="limpiarCartas()">Limpiar Todas</button>
+                <button id="btn-card" class="btn btn-warning">Crear Carta</button>
+                <button id="btn-card-template" class="btn btn-dark">Crear Carta (Template)</button>
+                <button id="btn-card-clear" class="btn btn-outline-danger">Limpiar Todas</button>
 
                 <div id="contenedor-cartas" class="row g-3 mt-3"></div>
             </div>
@@ -142,7 +114,7 @@
 
     </div>
 
-    <!-- Template de Carta -->
+    <!-- Template -->
     <template id="plantilla-carta">
         <div class="col-md-4 fade-in">
             <div class="card shadow-sm">
