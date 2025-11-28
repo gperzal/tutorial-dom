@@ -1,4 +1,4 @@
-# 📘 Tutorial Interactivo del DOM — Versión PRO
+# 📘 Tutorial Interactivo del DOM
 
 ![HTML Badge](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=flat-square)
 ![CSS Badge](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=flat-square)
@@ -60,7 +60,7 @@ No requiere dependencias ni servidor.
 
 1. Clona o descarga:
    ```bash
-   git clone https://github.com/gperza/tutorial-dom.git
+   git clone https://github.com/gperzal/tutorial-dom.git
    ```
 2. Abre:
    ```
